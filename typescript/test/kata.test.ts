@@ -33,4 +33,12 @@ describe("Rock paper scissors game", () => {
     const game = new RockPaperScissorGame(player, opponent);
     expect(game.winner()).toBe(player);
   });
+
+  it("Given I have chosen rock. When the opponent chooses paper. Then the opponent should win", () => {
+    const player = 'rock'
+    const opponent = 'paper'
+    const game = new RockPaperScissorGame(player, opponent)
+    expect(game.winner()).toBe(opponent)
+  })
+
 });
