@@ -1,6 +1,6 @@
 export class RockPaperScissorGame {
   winner() {
-    if (this.player === "paper" && this.opponent === "rock") return this.player;
+    if (this.player === "paper") return this.player;
 
     if (this.opponent == "rock") return this.opponent;
 
