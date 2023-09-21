@@ -10,11 +10,18 @@ describe("Rock paper scissors game", () => {
     const game = new RockPaperScissorGame("","")
     expect(game).toBeInstanceOf(RockPaperScissorGame);
   })
-  
+
   it("I want the rock to beat scissors", () => {
     const player = 'rock'
     const opponent = 'scissors'
     const game = new RockPaperScissorGame(player, opponent)
-    expect(game.winner()).toBe("rock")
+    expect(game.winner()).toBe(player)
+  })
+
+  it("I want the scissors to beat rock", () => {
+    const player = 'scissors'
+    const opponent = 'rock'
+    const game = new RockPaperScissorGame(player, opponent)
+    expect(game.winner()).toBe(opponent)
   })
 });
