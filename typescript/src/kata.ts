@@ -1,3 +1,2 @@
-export const renameMe = () => {
-  return true;
+export class RockPaperScissorGame {
 };

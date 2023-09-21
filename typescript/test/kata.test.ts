@@ -1,9 +1,10 @@
 import { expect, describe, it } from "vitest";
-import { renameMe } from "../src/kata.ts";
+import { RockPaperScissorGame } from "../src/kata";
 
-describe("Kata", () => {
-  it("change_this_name", () => {
-    const result = renameMe();
-    expect(result).toBe(true);
+describe("Rock paper scissors game", () => {
+  it("can initialize a game", () => {
+    const game = new RockPaperScissorGame()
+    
+    expect(game).toBeInstanceOf(RockPaperScissorGame);
   });
 });
