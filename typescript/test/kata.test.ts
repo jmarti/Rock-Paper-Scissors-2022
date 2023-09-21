@@ -1,5 +1,4 @@
-import { expect } from "expect";
-import { describe, it } from "std/testing/bdd.ts";
+import { expect, describe, it } from "vitest";
 import { renameMe } from "../src/kata.ts";
 
 describe("Kata", () => {
